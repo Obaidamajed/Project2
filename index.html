@@ -1,12 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Obaida Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obaida Al-thunibat Portfolio</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/18b0a154a3.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: 'Times New Roman', georgia, serif;
+        }
+        h1{
+            letter-spacing: 5px;
+            position: absolute;
+            bottom: 45%;
+            color: white;
+            font-size: 36px;
+        }
+        #full{
+          letter-spacing: 5px;
+            position: absolute;
+            bottom: 35%;
+            left: 4%;
+            color: white;
+        }
+        #CV{
+            position: absolute;
+            bottom: 24%;
+            left: 15%;
+            color: white;
+            font-size: 28px;
+            text-decoration: none;
+            border: 1px solid bisque;
+            background-color: bisque;
+            color: black;
+            border-radius: 6px;
+        }
+        #CV:hover{
+          font-size: 30px;
+          color: black;
+        }
+        #full:hover{
+          color:bisque;
+        }
+        h1:hover{
+          color: bisque;
+        }
+        #edu{
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          justify-items: center;
+          position: relative;
+          }
+        #exp{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+        }
+        #p{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          justify-items: center;
+        }
+        .ho:hover{
+          color: green;
+        }
+      #img{
+       position: absolute;
+       left: 0%;
+       opacity: 0.5;
+      }
+      #img2{
+        position: absolute;
+       right: 0%;
+       opacity: 0.5;
+      }
+      #comp{
+        position: absolute;
+       left: 0%;
+       opacity: 0.5;
+       z-index: -1;
+      }
+      #edco{
+        position: absolute;
+       right: 0%;
+       opacity: 0.5;
+       z-index: -1;
+      }
+      #pro{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+      }
+      #y{
+        position: absolute;
+       left: 0%;
+       opacity: 0.5;
+      }
+      #exp{
+        position: relative;
+      }
+      #z{
+        position: absolute;
+       right: 0%;
+       opacity: 0.5;
+      }
+      #w{
+        position: absolute;
+        right: 0%;
+       opacity: 0.5;
+      }
+      #obj{
+        position: relative;
+      }
+      #ho:hover{
+        color: green;
+      }
+      @media screen and (max-width:912px) {
+       
+        h1{
+          margin-bottom: 400px;
+          font-size: 45px;
+        
+        }
+        #full{
+          margin-bottom: 450px;
+          font-size: 35px;
+          margin-left: 0;
+        }
+        #CV{
+          margin-bottom: 500px;
+          font-size: 30px;
+        }
+        .w3-button{
+          margin-right: 13px !important;
+        }
+      
+      }
+
+      @media screen and (max-width:769px) {
+        h1{
+          margin-bottom: 300px;
+          font-size: 45px;
+        
+        }
+        #full{
+          margin-bottom: 320px;
+          font-size: 35px;
+          margin-left: 0;
+        }
+        #CV{
+          margin-bottom: 350px;
+          font-size: 30px;
+        }
+      }
+
+      @media screen and (max-width:540px){
+        h1{
+          margin-bottom: 100px;
+          font-size: 30px;
+          margin-left: 10px;
+        }
+        #full{
+          margin-bottom: 100px;
+          font-size: 25px;
+        }
+        #CV{
+          margin-bottom: 100px;
+          font-size: 25px;
+        }
+        .w3-hide-small{
+          display: inline-block !important; 
+          display: flex !important;   
+         
+        }
+        .w3-card{
+          display: flex;
+        font-size: 10px;
+        }
+        .w3-button{
+          padding: 13px !important;
+        }
+        .w3-padding{
+          padding: 0% !important;
+        }
+      }
+      @media screen and (max-width:415px) {
+
+      h1{
+        margin-bottom: 170px;
+        font-size: 20px; }
+          #full{
+         margin-bottom: 200px;
+        font-size: 16px; }
+        #CV{
+          margin-bottom: 230px;
+          font-size: 15px;
+        }
+        #edu,#obj,#pro,#exp,hr,#f{
+          width: 140% ;
+          margin-right: %;
+        }
+        .w3-button{
+          padding: 3px !important;
+          font-size: 9px !important;
+          margin: 0 auto;
+        }
+        #pho{
+          width: 130%;
+        }
+        .q{
+          margin-left: 40%;
+    
+        }
+        #just2{
+        margin-right: 30%;
+        }
+        #just1{
+          margin-right: 20%;
+        }
+        #logo{
+          margin-left: 0;
+        }
+        .s{
+        /* margin-left: 6%;         */
+        display: flex;
+        }
+        }
+        @media screen and (max-width:394px) {
+        #just{
+        margin-left: -15px;
+        }
+        #just2{
+          margin-right: 220px;
+        position: relative;
+        right: 20px;
+        }
+        #just1{
+          position: relative;
+      right: 5px;
+    }
+    .w3-button{
+          padding: 3px !important;
+          font-size: 9px !important;
+          margin: 0 auto;
+        }
+      }
+      @media screen and (max-width:376px) {
+        header img{
+          width: 110%;
+        }
+        #edu,#obj,#pro,#exp,hr{
+          width: 110% ;
+          margin-right: 5%;
+        }
+        .w3-button{
+          /* padding: 3px !important; */
+          font-size: 7px !important;
+          margin: 0 4px;
+          font-size: bold;
+        }
+        h1{
+         /* margin-top: 320px; */
+         font-size: 15px;
+         /* padding-top: 300px; */
+         position: absolute;
+         top: 140px;
+         
+       }
+       #full{
+         /* margin-top: 50px; */
+         font-size: 11px;
+        position: absolute;
+         top: 170px;
+       }
+       #edu,#obj,#pro,#exp,hr{
+          width: 140% ;
+          margin-right: %;
+        }
+        /* #img,hr,#obj{
+          width: 125%;
+        } */
+      }
+      @media screen and (max-width:281px) {
+        /* header img{
+          width: 290%;
+        } */
+        #pho{
+          width: 185%;
+        }
+        #edu,#obj,#pro,#exp,hr{
+          width: 185% ;
+          margin-left: 10%;
+        }
+        #f{
+          width: 185%;
+        }
+        .q{
+          margin-left: 60%;
+        }
+        .w3-button{
+          /* padding: 3px !important; */
+          font-size: 7px !important;
+          margin: 0 4px;
+          font-size: bold;
+        }
+        h1{
+         /* margin-top: 320px; */
+         font-size: 15px;
+         /* padding-top: 300px; */
+         
+       }
+       #full{
+         /* margin-top: 50px; */
+         font-size: 11px;
+       }
+      }
+      
+    </style>
 </head>
 <body>
-  <a href="project2/NEW_Portfolio.html">Project2 (Portfolio)</a>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+      <a href="#home" class="w3-bar-item w3-button" id="logo"><i class="fa-solid fa-meteor fa-2x"></i></a>
+      <!-- Right-sided navbar links. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#obj" class="w3-bar-item w3-button s"><b>Objective</b></a>
+        <a href="#edu" class="w3-bar-item w3-button s"><b>Education</b></a>
+        <a href="#pro" class="w3-bar-item w3-button s"><b>Project</b></a>
+        <a href="#exp" class="w3-bar-item w3-button s"><b>Experience</b></a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Header -->
+  <header id="home" style="width:100%;">
+
+    <img id="pho" width="100%" height="600px" src="a.jpg" alt="Obaida">
+
+    <div>
+      <h1><strong>Obaida Al-thunibat</strong></h1>
+      <h2 id="full"><strong>Full Stack Developer</strong></h2>
+      <h3 id="CV"><a href="My CV ( Eng.Obaida Al-thunibat ).pdf"target="_blank"><b>Download My CV</b></a></h3>
+    </div>
+
+  </header>
+
+      <!-- Page content -->
+      <div  style="width: 80%; margin: 0 auto;">
+        <hr>
+         <!-- Objective Section -->
+         <h2 class="q" style="text-align:center; text-decoration: underline;font-size: 40px;"><b>Objective</b> </h2>
+<div id="obj">
+  <img id="w" width="100%" height="115%" src="pasted.png" alt="object">
+     <br><br><p style="text-align:center;font-size: 25px;" ><b> Detail-oriented individual with knowledge across a broad range of
+      programming languages including HTML, Css, etc.
+      Looking for a Programmer position to utilize outstanding programming skills to provide solutions to the organization’s business problems.
+      Individual with well-honed skills in computer science and technical expertise in the support of specialized.
+      programming projects using web based and client server tools. Interested in the job of a Software Developer.
+      Coming with strong ability to design, develop, and maintain software applications.
+    </b></p>
+</div><br><br>
+<hr>
+         <!-- Education Section -->
+         <h2 class="q" style="text-align:center; text-decoration: underline;font-size: 40px;"><b>Education</b> </h2>
+          <div id="edu">
+  <img id="img" width="50%" height="115%" src="b.jpg" alt="education">
+  <img id="img2" width="50%" height="115%" src="c.jpg" alt="High School">
+<ul style="list-style:disc;margin-top: 30%;" id="just">
+  <li style="font-size: 30px; list-style: none; color: black;"><b>Orange Coding Academy</b></li><br>
+  <li style="font-size: 25px;"><b>Full Stack Development</b> </li>
+  <li style="font-size: 25px;"><b>2/10/2022 - Present</b></li>
+  <li style="font-size: 25px;"><b>Jordan - Aqaba</b></li>
+</ul>
+
+    <ul  style="list-style:disc" id="just1">
+      <br><br> <li style="font-size: 30px; list-style: none; color: black;"><b>Mu'ta University</b></li><br>
+      <li style="font-size: 25px;"><b>Electrical power <br> and control <br> engineer</b></li>
+      <li style="font-size: 25px;"><b>GPA {80.37}</b></li>
+      <li style="font-size: 25px;"><b>9/2015 - 1/2020</b></li>
+      <li style="font-size: 25px;"><b>Jordan - Karak</b></li>
+    </ul>
+
+      <ul  style="list-style:disc;margin-top: 30%;" id="just2">
+        <li style="font-size: 30px; list-style: none; color: black;"><b>Wasfi Al-tall</b></li><br>
+        <li style="font-size: 25px;"><b>Electrical</b></li>
+        <li style="font-size: 25px;"><b>GPA {88}</b></li>
+        <li style="font-size: 25px;"><b>2015</b></li>
+        <li style="font-size: 25px;"><b>Jordan - Aqaba</b></li>
+      </ul>
+            </div><br><br><br>
+            <hr>
+               <!-- Project Section -->
+               <h2 class="q" style="text-align:center; text-decoration: underline;font-size: 40px;"><b>Project</b> </h2>
+<div id="pro">
+    <div style="width: 50%; text-align:center">
+        <img id="comp" width="50%" height="115%" src="Doc.jpg" alt="programing">
+        <br><br><a href="https://miro.com/app/board/uXjVPOwD7cM=/"class="ho"target="_blank"
+        style="font-size:30px; text-decoration: none;" ><b>Aqaba Doctors</b> 
+        </a>
+        <p style="font-size: 25px;"><b>
+          <br> It is a project concerned
+          <br> with providing a
+          <br> medical service to
+          <br> the people of Aqaba
+          <br> Governorate. <br><br><br></b>
+        </p>      
+    </div>
+
+    <div style="width: 50%;text-align:center">
+        <img id="edco" width="50%" height="115%" src="gen.jpg" alt="Electrical">
+        <br><p id="ho"
+        style="font-size:30px; text-decoration: none;">  <b>Synchronus Generator</b> 
+        </p>
+        <p style="font-size: 25px;"><b>
+          <br> It is a project concerned
+          <br> with providing a
+          <br> medical service to
+          <br> the people of Aqaba
+          <br> Governorate. <br><br><br></b>
+        </p> 
+    </div>
+</div><br><br><br><br>
+<hr>
+                <!-- Experience Section -->
+       <h2 class="q" style="text-align: center;text-decoration: underline;font-size: 40px;"><b>Experience</b></h2>   
+<div id="exp">
+  
+  <img id="y" width="50%" height="115%" src="comp.jpg" alt="programing"><br><br><br><br>
+  <img id="z" width="50%" height="115%" src="elec.jpg" alt="EDCO"><br><br><br><br>
+    <ul style="list-style-type:none">
+      <li style="text-align:center;font-size: 30px;"><b>Trainee</b></li> <br><br>
+      <li style="text-align:center;font-size: 25px; "><b>Full stack Development at orange coding academy</b> </li>
+      <li style="text-align:center;font-size: 25px; "><b>2/10/2022 - Present</b> </li>
+      <li style="text-align:center;font-size: 25px; "><b>Jordan - Aqaba</b> </li>
+    </ul>
+  <ul style="list-style-type:none">
+    <li style="text-align:center;font-size: 30px;"><b>Trainee</b></li> <br><br>
+    <li style="text-align:center;font-size: 25px;"><b>Electrical engineer at <br> Electricity Distribution Company (EDCO)</b> </li>
+    <li style="text-align:center;font-size: 25px;"><b>6/2019 - 8/2019</b> </li>
+    <li style="text-align:center;font-size: 25px;"><b>Jordan - Aqaba </b></li>
+  </ul>
+</div><br><br><br><br>
+
+                <!-- End page content -->
+      </div>
+                <!-- Footer -->
+<footer id="f" style="background-color:#f1f1f1;height: 100%;">
+
+  <div id="p">
+
+  <p><i class="fa-solid fa-envelope fa-2x"></i> Obaidaalthunibat@gmail.com</p>
+  <p><a class="ho" href="https://github.com/obaidamajed"target="_blank" ><i class="fa-brands fa-github fa-2x"></i></a></p>
+  <p><i class="fa-solid fa-phone fa-2x"></i> 0781841055</p>
+  <p><a class="ho" href="https://www.linkedin.com/in/obaida-al-thunibat-a76975214/"target="_blank" ><i class="fa-brands fa-linkedin fa-2x"></i></a></p>
+
+  </div>
+
+</footer>
+
 </body>
 </html>
