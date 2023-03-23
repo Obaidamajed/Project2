@@ -1,0 +1,326 @@
+body{
+  font-family: 'Times New Roman', georgia, serif;
+}
+h1{
+  letter-spacing: 5px;
+  position: absolute;
+  bottom: 45%;
+  color: white;
+  font-size: 36px;
+}
+#full{
+letter-spacing: 5px;
+  position: absolute;
+  bottom: 35%;
+  left: 4%;
+  color: white;
+}
+#CV{
+  position: absolute;
+  bottom: 24%;
+  left: 15%;
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  border: 1px solid bisque;
+  background-color: bisque;
+  color: black;
+  border-radius: 6px;
+}
+#CV:hover{
+font-size: 30px;
+color: black;
+}
+#full:hover{
+color:bisque;
+}
+h1:hover{
+color: bisque;
+}
+#edu{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+justify-items: center;
+position: relative;
+}
+#exp{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+}
+#p{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+justify-items: center;
+}
+.ho:hover{
+color: green;
+}
+#img{
+position: absolute;
+left: 0%;
+opacity: 0.5;
+}
+#img2{
+position: absolute;
+right: 0%;
+opacity: 0.5;
+}
+#comp{
+position: absolute;
+left: 0%;
+opacity: 0.5;
+z-index: -1;
+}
+#edco{
+position: absolute;
+right: 0%;
+opacity: 0.5;
+z-index: -1;
+}
+#pro{
+position: relative;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+justify-items: center;
+}
+#y{
+position: absolute;
+left: 0%;
+opacity: 0.5;
+}
+#exp{
+position: relative;
+}
+#z{
+position: absolute;
+right: 0%;
+opacity: 0.5;
+}
+#w{
+position: absolute;
+right: 0%;
+opacity: 0.5;
+}
+#obj{
+position: relative;
+}
+#ho:hover{
+color: green;
+}
+
+@media screen and (max-width:912px) {
+
+h1{
+margin-bottom: 400px;
+font-size: 45px;
+
+}
+#full{
+margin-bottom: 450px;
+font-size: 35px;
+margin-left: 0;
+}
+#CV{
+margin-bottom: 500px;
+font-size: 30px;
+}
+.w3-button{
+margin-right: 13px !important;
+}
+
+}
+
+@media screen and (max-width:769px) {
+h1{
+margin-bottom: 300px;
+font-size: 45px;
+
+}
+#full{
+margin-bottom: 320px;
+font-size: 35px;
+margin-left: 0;
+}
+#CV{
+margin-bottom: 350px;
+font-size: 30px;
+}
+}
+
+@media screen and (max-width:540px){
+h1{
+margin-bottom: 100px;
+font-size: 30px;
+margin-left: 10px;
+}
+#pho{
+width: 105%;
+}
+#edu,#obj,#pro,#exp,hr{
+width: 110% ;
+margin-left: -2%;
+}
+#f{
+width: 105%;
+}
+#w{
+height: 113%;
+}
+#comp,#edco{
+height: 113%;
+}
+#full{
+margin-bottom: 100px;
+font-size: 25px;
+}
+#CV{
+margin-bottom: 100px;
+font-size: 25px;
+}
+.w3-hide-small{
+display: inline-block !important; 
+display: flex !important;   
+
+}
+.w3-card{
+display: flex;
+font-size: 10px;
+}
+.w3-button{
+padding: 13px !important;
+}
+.w3-padding{
+padding: 0% !important;
+}
+}
+@media screen and (max-width:415px) {
+
+h1{
+margin-bottom: 170px;
+font-size: 20px; }
+#full{
+margin-bottom: 200px;
+font-size: 16px; }
+#CV{
+margin-bottom: 230px;
+font-size: 15px;
+}
+#edu,#obj,#pro,#exp,hr,#f{
+width: 140% ;
+margin-right: 0%;
+}
+.w3-button{
+padding: 3px !important;
+font-size: 9px !important;
+margin: 0 auto;
+}
+#pho{
+width: 130%;
+}
+.q{
+margin-left: 40%;
+
+}
+#just2{
+margin-right: 30%;
+}
+#just1{
+margin-right: 20%;
+}
+#logo{
+margin-left: 0;
+}
+.s{
+/* margin-left: 6%;         */
+display: flex;
+}
+}
+@media screen and (max-width:394px) {
+#just{
+margin-left: -15px;
+}
+#just2{
+margin-right: 220px;
+position: relative;
+right: 20px;
+}
+#just1{
+position: relative;
+right: 5px;
+}
+.w3-button{
+padding: 3px !important;
+font-size: 9px !important;
+margin: 0 auto;
+}
+}
+@media screen and (max-width:376px) {
+header img{
+width: 110%;
+}
+#edu,#obj,#pro,#exp,hr{
+width: 110% ;
+margin-right: 5%;
+}
+.w3-button{
+/* padding: 3px !important; */
+font-size: 7px !important;
+margin: 0 4px;
+font-size: bold;
+}
+h1{
+/* margin-top: 320px; */
+font-size: 15px;
+/* padding-top: 300px; */
+position: absolute;
+top: 140px;
+
+}
+#full{
+/* margin-top: 50px; */
+font-size: 11px;
+position: absolute;
+top: 170px;
+}
+#edu,#obj,#pro,#exp,hr{
+width: 140% ;
+margin-right: 0%;
+}
+/* #img,hr,#obj{
+width: 125%;
+} */
+}
+@media screen and (max-width:281px) {
+/* header img{
+width: 290%;
+} */
+#pho{
+width: 185%;
+}
+#edu,#obj,#pro,#exp,hr{
+width: 185% ;
+margin-left: 10%;
+}
+#f{
+width: 185%;
+}
+.q{
+margin-left: 60%;
+}
+.w3-button{
+/* padding: 3px !important; */
+font-size: 7px !important;
+margin: 0 4px;
+font-size: bold;
+}
+h1{
+/* margin-top: 320px; */
+font-size: 15px;
+/* padding-top: 300px; */
+
+}
+#full{
+/* margin-top: 50px; */
+font-size: 11px;
+}
+}
